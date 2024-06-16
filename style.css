@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+  padding-top: 56px; /* Ensure content is not hidden behind the fixed header */
+}
+
+/* Hero Section */
+#hero {
+  background-color: #8dbbff; /* Blue background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem; /* Add padding */
+  overflow: hidden; /* Prevent horizontal scroll */
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2c3e50; /* Match the text color to the Figma design */
+}
+
+#hero p {
+  font-size: 1.5rem;
+  color: #2c3e50; /* Match the text color to the Figma design */
+}
+
+#hero .btn-primary {
+  background-color: #2c3e50; /* Darker button color */
+  border-color: #2c3e50;
+  margin-right: 1rem;
+}
+
+#hero .btn-outline-secondary {
+  color: #2c3e50; /* Darker outline button color */
+  border-color: #2c3e50;
+}
+
+#hero img.hero-image {
+  width: 200%; /* Ensure it takes up more than the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: none; /* Override the default Bootstrap max-width */
+  object-fit: cover; /* Ensure the image covers the container */
+  transform: translateX(10%) translateY(25px); /* Move the image to the right and down */
+}
+
+/* Testimonials Section */
+#testimonials .testimonial {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#testimonials .lead {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#testimonials p {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: lightblue; /* Change arrow color to blue */
+}
+
+/* Services Section */
+#services .card {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.service-card .card-body {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: -20px; /* Adjust to move the box below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Adjust width as necessary */
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  object-fit: cover;
+  height: 300px; /* Increase height for bigger images */
+}
+
+#services .carousel-inner {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Specialists Section */
+#specialists .card {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.specialist-card.selected {
+  border: 2px solid #2c3e50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.specialist-card .selection-dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #2c3e50;
+  border-radius: 50%;
+}
+
+.specialist-card.selected .selection-dot {
+  background-color: #2c3e50;
+}
+
+/* Transparent Header */
+.navbar {
+  background-color: rgba(141, 187, 255, 0.8) !important; /* Semi-transparent with a blue tint */
+  border: none; /* Remove any border if present */
+  box-shadow: none; /* Remove any shadow if present */
+}
+
+.navbar .nav-link {
+  color: #2c3e50; /* Ensure the text color matches the design */
+}
+
+.navbar .nav-link:hover {
+  color: #1a252f; /* Slightly darker color on hover for better visibility */
+}
+
+.navbar-brand {
+  color: #2c3e50; /* Ensure the brand name matches the design */
+}
+
+/* About Us Section */
+#about .d-flex div {
+  text-align: center;
+}
+
+#about .d-flex div h3 {
+  font-size: 2rem; /* Increase font size for the numbers */
+  margin-bottom: 0.5rem;
+}
+
+#about .d-flex div p {
+  margin-bottom: 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: #8dbbff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Form Styles */
+#bookingForm {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bookingForm .dropdown-toggle {
+  text-align: left;
+}
+
+#bookingForm .dropdown-menu {
+  width: 100%;
+}
+
+#bookingForm .dropdown-item {
+  cursor: pointer;
+}
+
+#bookingForm .btn {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
